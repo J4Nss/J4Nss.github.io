@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Passion+One:700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+
+.nav_block {
+	background-color: #F2E0F7;
+}
+
+.app_name {
+	font-family: "Passion";
+	font-size :25px;
+	color: #9F81F7;
+}
+
+.university_name{
+	font-family: "Passion";
+	font-size :20px;
+	color: #9F81F7;
+}
+
+.user_name {
+	font-family: "Roboto";
+	font-size: 20px;
+	color: #A4A4A4;
+	left: 73%;
+	text-align: center;
+}
+
+.logout_img {
+	left: 65%;
+}
