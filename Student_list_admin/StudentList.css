@@ -1,30 +1,115 @@
-@import url('https://fonts.googleapis.com/css?family=Passion+One:700');
 @import url('https://fonts.googleapis.com/css?family=Roboto:700');
-
+@import url('https://fonts.googleapis.com/css?family=Kanit:600');
+/*=============Banner============*/
 .nav_block {
 	background-color: #F2E0F7;
 }
 
 .app_name {
-	font-family: "Passion";
+	font-family: "Kanit";
 	font-size :25px;
-	color: #9F81F7;
+	color: #9a72a0;
 }
 
 .university_name{
-	font-family: "Passion";
+	font-family: "Kanit";
 	font-size :20px;
-	color: #9F81F7;
+	color: #9a72a0;
 }
 
 .user_name {
 	font-family: "Roboto";
 	font-size: 20px;
 	color: #A4A4A4;
-	left: 73%;
-	text-align: center;
+	left: 65%;
+	text-align: right;
 }
 
 .logout_img {
 	left: 65%;
 }
+
+/*================================*/
+
+
+/*===========Menu================*/
+.content_block {
+	top: 115px;
+}
+
+.menu {
+	background-color: #707070;
+	height: 1000px;
+	position: fixed;
+	padding-left: 0%;
+	padding-right: 0%;
+}
+
+.dash_menu {
+	margin-top: 25px;
+	font-family: "Kanit";
+	color: white;
+	font-size: 23px;
+}
+
+.dash_menu:hover {
+	background-color: #9a72a0;
+	color: #F2E0F7;
+}
+
+.StudentData_menu {
+	font-family: "Kanit";
+	color: white;
+	font-size: 23px;
+}
+
+.StudentData_menu:hover {
+	background-color: #9a72a0;
+	color: #F2E0F7;
+}
+
+.public_menu {
+	font-family: "Kanit";
+	color: white;
+	font-size: 23px;
+}
+
+.public_menu:hover {
+	background-color: #9a72a0;
+	color: #F2E0F7;
+}
+
+.course_menu {
+	font-family: "Kanit";
+	color: white;
+	font-size: 23px;
+}
+
+.course_menu:hover {
+	background-color: #9a72a0;
+	color: #F2E0F7;
+}
+
+.QECE_menu {
+	font-family: "Kanit";
+	color: white;
+	font-size: 23px;
+}
+
+.QECE_menu:hover {
+	background-color: #9a72a0;
+	color: #F2E0F7;
+}
+
+.form_menu {
+	font-family: "Kanit";
+	color: white;
+	font-size: 23px;
+}
+
+.form_menu:hover {
+	background-color: #9a72a0;
+	color: #F2E0F7;
+}
+
+/*========================================*/
