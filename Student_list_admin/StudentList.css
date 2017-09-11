@@ -32,7 +32,7 @@
 
 .button_logout {
 	background-color: transparent;
-	
+
 }
 
 /*================================*/
@@ -216,4 +216,39 @@
 .input_class {
 	font-family: "Athiti";
 	margin-top: 5px;
+}
+
+.table_student {
+	font-family: "Athiti";
+	margin-top: 20px;
+}
+
+.TableStudent_head {
+	background-color: #F2E0F7;
+	color: #7f7e7e;
+}
+
+.status_english {
+	margin-left: 30%;
+}
+
+.status_QECE {
+	margin-left: 35%;
+}
+
+.EditStudent_button {
+	background-color: transparent;
+}
+
+.pencil_pic:hover {
+	opacity: 0.5;
+}
+
+.check_block {
+	padding-left: 35%;
+}
+
+.check {
+	width: 18px;
+	height: 18px;
 }

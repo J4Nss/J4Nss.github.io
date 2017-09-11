@@ -50,6 +50,7 @@
           </nav>
         </div>
 
+        <!--Content-->
         <div class="col-10 content">
           <div class="row col-12 page_name">
             Students Data
@@ -93,41 +94,89 @@
               <input class="form-control form-control-sm input_class" type="text" placeholder="ปีการศึกษาที่เข้ามา ex.2560">
             </div>
           </div>
-          <table class="table table-bordered">
-  <thead>
-    <tr>
-      <th>#</th>
-      <th>First Name</th>
-      <th>Last Name</th>
-      <th>Username</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@TwBootstrap</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">4</th>
-      <td colspan="2">Larry the Bird</td>
-      <td>@twitter</td>
-    </tr>
-  </tbody>
-</table>
+          <table class="table table-bordered table-striped table_student">
+            <thead class="TableStudent_head">
+              <tr>
+                <th>ลำดับที่</th>
+                <th>รหัสนักศึกษา</th>
+                <th>ชื่อ-นามสกุล</th>
+                <th>อาจารย์ที่ปรึกษา</th>
+                <th>แผนการเรียน</th>
+                <th>สถานะภาพการศึกษา</th>
+                <th>ผลการทดสอบภาษาอังกฤษ</th>
+                <th>ผลการทดสอบQE/CE</th>
+                <th>งบประมาณทุนวิจัย</th>
+                <th>งบประมาณคงเหลือ</th>
+                <th>Edit</th>
+                <th>Delete</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>570610609</td>
+                <td>ศุภนิดา สรญาณธนาวุธ</td>
+                <td>พฤษภ์ บุญมา</td>
+                <td>ปริญญาโทแผน ก1</td>
+                <td>กำลังศึกษา</td>
+                <td><img src="../pic/check.png" class="status_english"></td>
+                <td><img src="../pic/cross.png" class="status_QECE"></td>
+                <td>8000</td>
+                <td>6000</td>
+                <td><button class="border-0 EditStudent_button"><img src="../pic/pencil.png" width="24 px" height="24 px" class="pencil_pic"></button></td>
+                <td>
+                  <div class="form-check check_block">
+                    <label class="form-check-label">
+                      <input class="form-check-input check" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                    </label>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>570610609</td>
+                <td>ศุภนิดา สรญาณธนาวุธ</td>
+                <td>พฤษภ์ บุญมา</td>
+                <td>ปริญญาโทแผน ก1</td>
+                <td>กำลังศึกษา</td>
+                <td><img src="../pic/check.png" class="status_english"></td>
+                <td><img src="../pic/cross.png" class="status_QECE"></td>
+                <td>8000</td>
+                <td>6000</td>
+                <td><button class="border-0 EditStudent_button"><img src="../pic/pencil.png" width="24 px" height="24 px" class="pencil_pic"></button></td>
+                <td>
+                  <div class="form-check check_block">
+                    <label class="form-check-label">
+                      <input class="form-check-input check" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                    </label>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>570610609</td>
+                <td>ศุภนิดา สรญาณธนาวุธ</td>
+                <td>พฤษภ์ บุญมา</td>
+                <td>ปริญญาโทแผน ก1</td>
+                <td>กำลังศึกษา</td>
+                <td><img src="../pic/check.png" class="status_english"></td>
+                <td><img src="../pic/cross.png" class="status_QECE"></td>
+                <td>8000</td>
+                <td>6000</td>
+                <td><button class="border-0 EditStudent_button"><img src="../pic/pencil.png" width="24 px" height="24 px" class="pencil_pic"></button></td>
+                <td>
+                  <div class="form-check check_block">
+                    <label class="form-check-label">
+                      <input class="form-check-input check" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                    </label>
+                  </div>
+                </td>
+              </tr>
+
+
+
+            </tbody>
+          </table>
 
 
         </div>
