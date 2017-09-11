@@ -27,10 +27,14 @@
             <div class="col-10 university_name">Chiang Mai University</div>
           </div>
         </div>  
-       <div class="row col-12">
-         <div class="col-4 user_name">User Name</div>
-         <div class="col-1 logout_img"><img src="../pic/logout.png"></div>
-       </div>
+        <div class="row col-12">
+          <div class="col-4 user_name">User Name</div>
+          <div class="col-1 logout_img">
+            <button class="button_logout border-0" data-toggle="tooltip" data-placement="top" title="Logout">
+              <img src="../pic/logout.png">
+            </button>
+          </div>
+        </div>
       </nav>
 
       <div class="row col-12 content_block">
@@ -46,9 +50,88 @@
           </nav>
         </div>
 
-        
-      </div>
+        <div class="col-10 content">
+          <div class="row col-12 page_name">
+            Students Data
+          </div>
+          <div class="row col-12">
+            <div class="col-1 add_block">
+              <button type="button" class="btn btn-primary add_button">Add</button>
+            </div>
+            <div class="col-1 delete_block">
+              <button type="button" class="btn btn-danger delete_button">Delete</button>
+            </div>
+          </div>
+          <div class="row col-12 classify_block">
+            <div class="col-1 word_search">
+              search :
+            </div>
+            <div class="col-5 input-group input_search">
+              <input type="text" class="form-control border-right-0 search_box" placeholder="Search for..." aria-label="Search for...">
+              <span class="input-group-btn border-left-0">
+                <button class="btn btn-secondary search_button border-left-0" type="button">
+                  <img src="../pic/search.png" width="18 px" height="18 px">
+                </button>
+              </span>
+            </div>
+            <div class="col-2 word_view">
+              view by :
+            </div>
+            <div class="col-2 dropdown program_block">
+              <button class="btn btn-secondary dropdown-toggle btn-sm border-0 program_button" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                แผนการเรียน
+              </button>
+              <div class="dropdown-menu program_dropdown" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">ปริญญาโทแผน ก1</a>
+                <a class="dropdown-item" href="#">ปริญญาโทแผน ก2</a>
+                <a class="dropdown-item" href="#">ปริญญาโทแผน ข</a>
+                <a class="dropdown-item" href="#">ปริญญาเอกแผน 1.1</a>
+                <a class="dropdown-item" href="#">ปริญญาเอกแผน 2.1</a>
+              </div>
+            </div>
+            <div class="col-2 class_block">
+              <input class="form-control form-control-sm input_class" type="text" placeholder="ปีการศึกษาที่เข้ามา ex.2560">
+            </div>
+          </div>
+          <table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Username</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@TwBootstrap</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">4</th>
+      <td colspan="2">Larry the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+</table>
 
+
+        </div>
+      </div>
     
   </body>
 </html>

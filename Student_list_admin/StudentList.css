@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:700');
 @import url('https://fonts.googleapis.com/css?family=Kanit:600');
+@import url('https://fonts.googleapis.com/css?family=Athiti');
 /*=============Banner============*/
 .nav_block {
 	background-color: #F2E0F7;
@@ -27,6 +28,11 @@
 
 .logout_img {
 	left: 65%;
+}
+
+.button_logout {
+	background-color: transparent;
+	
 }
 
 /*================================*/
@@ -113,3 +119,101 @@
 }
 
 /*========================================*/
+
+.content {
+	left: 17%;
+	padding-right: 0%;
+}
+
+.page_name {
+	margin-top: 25px;
+	font-family: "Roboto";
+	font-size: 23px;
+	color: #A4A4A4;
+}
+
+.add_block {
+	margin-left: 83%;
+	padding-right: 0%;
+}
+
+.add_button {
+	font-family: "Roboto";
+}
+
+.delete_block {
+	padding-left: 0%;
+}
+
+.delete_button {
+	font-family: "Roboto";
+}
+
+.classify_block {
+	padding-top: 10px;
+}
+
+.word_search {
+	font-family: "Roboto";
+	font-size: 18px;
+	padding-right: 0%;
+	padding-top: 5px;
+}
+
+.input_search {
+	padding-left: 0%;
+}
+
+.search_box {
+	font-family: "Athiti";
+}
+
+.search_button {
+	background-color: transparent;
+	border-color: #d9d9d9;
+}
+
+.search_button:hover {
+	background-color: transparent;
+	border-color: #d9d9d9;
+}
+
+.word_view {
+	font-family: "Roboto";
+	font-size: 18px;
+	padding-top: 5px;
+	padding-right: 0%;
+	padding-left: 0%;
+	text-align: right;
+}
+
+.program_block {
+	/*padding-right: 0%;*/
+}
+
+.program_button {
+	font-family: "Athiti";
+	font-size: 18px;
+	background-color: #d9d9d9;
+	color: #707070;
+	width: 100%;
+}
+
+.program_button:focus {
+	color: white;
+}
+
+.program_dropdown {
+	font-family: "Athiti";
+	font-size: 18px;
+}
+
+.class_block {
+	padding-left: 0%;
+	padding-right: 0%;
+}
+
+.input_class {
+	font-family: "Athiti";
+	margin-top: 5px;
+}
