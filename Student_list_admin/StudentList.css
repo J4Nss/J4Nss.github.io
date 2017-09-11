@@ -120,6 +120,8 @@
 
 /*========================================*/
 
+
+/*================Content===============*/
 .content {
 	left: 17%;
 	padding-right: 0%;
@@ -185,10 +187,6 @@
 	padding-right: 0%;
 	padding-left: 0%;
 	text-align: right;
-}
-
-.program_block {
-	/*padding-right: 0%;*/
 }
 
 .program_button {
