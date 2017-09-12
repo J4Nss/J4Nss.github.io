@@ -197,7 +197,7 @@
 	text-align: right;
 }
 
-.program_button {
+.TypeCourse_button {
 	font-family: "Athiti";
 	font-size: 18px;
 	background-color: #d9d9d9;
@@ -205,28 +205,13 @@
 	width: 100%;
 }
 
-.program_button:focus {
+.TypeCourse_button:focus {
 	color: white;
 }
 
-.program_dropdown {
+.TypeCourse_dropdown {
 	font-family: "Athiti";
 	font-size: 18px;
-}
-
-.class_block {
-	padding-left: 0%;
-	padding-right: 0%;
-}
-
-.class_block {
-	padding-left: 0%;
-	padding-right: 0%;
-}
-
-.input_class {
-	font-family: "Athiti";
-	margin-top: 5px;
 }
 
 .table_course {
