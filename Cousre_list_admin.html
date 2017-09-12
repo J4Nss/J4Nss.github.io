@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Course</title>
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" type="text/css" href="CSS/CourseList.css">
+</head>
+<body>
+	<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+    <!--Banner-->
+    <nav class="navbar fixed-top nav_block">
+    	<div class="row col-12">
+        	<img src="pic/cpe-logo.png" width="70 px" height="70 px" class="d-inline-block align-top" alt="">
+        	<div class="row col-10">
+        		<div class="col-10 app_name">MIS for CPE Students</div>
+        	    <div class="col-10 university_name">Chiang Mai University</div>
+        	</div>
+    	</div>  
+    	<div class="row col-12">
+        	<div class="col-4 user_name">User Name</div>
+        	<div class="col-1 logout_img">
+        		<button class="button_logout border-0" data-toggle="tooltip" data-placement="top" title="Logout">
+        	    	<img src="pic/logout.png">
+        	    </button>
+        	</div>
+    	</div>
+   	</nav>
+
+    <div class="row col-12 content_block">
+    	<!--Menu-->
+    	<div class="col-2 menu">
+        	<nav class="nav flex-column">
+            	<a class="nav-link dash_menu" href="#">Dashboard</a>
+            	<a class="nav-link StudentData_menu" href="#">Student Data</a>
+            	<a class="nav-link public_menu" href="#">Publication</a>
+            	<a class="nav-link course_menu" href="#">Course</a>
+            	<a class="nav-link QECE_menu" href="#">QE/CE Test</a>
+            	<a class="nav-link form_menu" href="#">Form</a>
+        	</nav>
+    	</div>
+
+    	<!--Content-->
+    	<div class="col-10 content">
+    	    <!--Page Name-->
+    	    <div class="row col-12 page_name">Course</div>
+    	    <!--Add and Delete button-->
+    	    <div class="row col-12">
+    	        <div class="col-1 add_block">
+    	        	<button type="button" class="btn btn-primary add_button">Add</button>
+    	        </div>
+    	        <div class="col-1 delete_block">
+    	        	<button type="button" class="btn btn-danger delete_button">Delete</button>
+    	        </div>
+    	        <div class="col-1 update_block">
+    	        	<button type="button" class="btn btn-secondary Update_button">Update</button>
+    	        </div>
+    	    </div>
+    	    <!--classify student section-->
+    	    <div class="row col-12 classify_block">
+    	        <div class="col-1 word_search">Search: </div>
+    	        <div class="col-5 input-group input_search">
+    	        	<input type="text" class="form-control border-right-0 search_box" placeholder="Search for..." aria-label="Search for...">
+    	        	<span class="input-group-btn border-left-0">
+    	            	<button class="btn btn-secondary search_button border-left-0" type="button">
+    	            		<img src="pic/search.png" width="18 px" height="18 px">
+    	            	</button>
+    	         	</span>
+    	        </div>
+    	        <div class="col-2 word_view">View by: </div>
+    	        <div class="col-2 dropdown">
+    	        	<button class="btn btn-secondary dropdown-toggle btn-sm border-0 program_button" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Type </button>
+        	      	<div class="dropdown-menu program_dropdown" aria-labelledby="dropdownMenuButton">
+        	        	<a class="dropdown-item" href="#">Mandatory</a>
+        	        	<a class="dropdown-item" href="#">Elective</a>
+        	      	</div>
+        	    </div>
+        	</div>
+        	<!--table of students list-->
+        	<table class="table table-bordered table-striped table_course">
+        	    <thead class="TableCourse_head">
+        	    	<tr>
+        	        	<th>ลำดับที่</th>
+        	        	<th>รหัสวิชา</th>
+        	        	<th>ชื่อวิชา</th>
+        	        	<th>ผู้สอน</th>
+        	       		<th>ประเภท</th>
+        	        	<th>สถานะ</th>
+        	        	<th>Edit</th>
+        	        	<th>Delete</th>
+        	      	</tr>
+        	    </thead>
+        	    <tbody>
+            		<tr>
+                		<th scope="row">1</th>
+                		<td>261791</td>
+                		<td>SEMINAR IN COMP ENGR</td>
+                		<td>สรรพวรรธน์ กันตะบุตร</td>
+                		<td>Mandatory</td>
+                		<td>
+                			<div class="form-check disabled check_block">
+  								<label class="form-check-label">
+    								<input class="form-check-input check" type="checkbox" id="inlineCheckbox3" value="option3" disabled>
+  								</label>
+							</div>
+                		</td>
+               		 	<td><button class="border-0 EditCourse_button"><img src="pic/pencil.png" width="24 px" height="24 px" class="pencil_pic"></button></td>
+                		<td>
+                			<div class="form-check check_block">
+                	    		<label class="form-check-label">
+                	      			<input class="form-check-input check" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                	    		</label>
+                	  		</div>
+                		</td>
+             		</tr>
+             		<tr>
+                		<th scope="row">2</th>
+                		<td>261781</td>
+                		<td>SOFTWARE PROJECT MANAGEMENT</td>
+                		<td>ศักดิ์กษิต ระมิงค์วงศ์</td>
+                		<td>Elective</td>
+                		<td>
+                			<div class="form-check disabled check_block">
+  								<label class="form-check-label">
+    								<input class="form-check-input check" type="checkbox" id="inlineCheckbox3" value="option3" disabled>
+  								</label>
+							</div>
+                		</td>
+               		 	<td><button class="border-0 EditCourse_button"><img src="pic/pencil.png" width="24 px" height="24 px" class="pencil_pic"></button></td>
+                		<td>
+                			<div class="form-check check_block">
+                	    		<label class="form-check-label">
+                	      			<input class="form-check-input check" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                	    		</label>
+                	  		</div>
+                		</td>
+             		</tr>
+             		<tr>
+                		<th scope="row">3</th>
+                		<td>261753</td>
+                		<td>COMPUTER VISION</td>
+                		<td>กานต์ ปทานุคม</td>
+                		<td>Elective</td>
+                		<td>
+                			<div class="form-check disabled check_block">
+  								<label class="form-check-label">
+    								<input class="form-check-input check" type="checkbox" id="inlineCheckbox3" value="option3" disabled>
+  								</label>
+							</div>
+                		</td>
+               		 	<td><button class="border-0 EditCourse_button"><img src="pic/pencil.png" width="24 px" height="24 px" class="pencil_pic"></button></td>
+                		<td>
+                			<div class="form-check check_block">
+                	    		<label class="form-check-label">
+                	      			<input class="form-check-input check" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                	    		</label>
+                	  		</div>
+                		</td>
+             		</tr>
+             		<tr>
+                		<th scope="row">4</th>
+                		<td>261732</td>
+                		<td>QUEUEING THEORY</td>
+                		<td>ตรัสพงศ์ ไทยอุปถัมภ์</td>
+                		<td>Elective</td>
+                		<td>
+                			<div class="form-check disabled check_block">
+  								<label class="form-check-label">
+    								<input class="form-check-input check" type="checkbox" id="inlineCheckbox3" value="option3" disabled>
+  								</label>
+							</div>
+                		</td>
+               		 	<td><button class="border-0 EditCourse_button"><img src="pic/pencil.png" width="24 px" height="24 px" class="pencil_pic"></button></td>
+                		<td>
+                			<div class="form-check check_block">
+                	    		<label class="form-check-label">
+                	      			<input class="form-check-input check" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                	    		</label>
+                	  		</div>
+                		</td>
+             		</tr>
+        	    </tbody>
+        	</table>
+		</div>
+    </div>
+</body>
+</html>
