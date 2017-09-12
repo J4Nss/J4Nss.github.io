@@ -71,7 +71,7 @@
           <!--classify student section-->
           <div class="row col-12 classify_block">
           	<div class="col-1 word_search">
-              search :
+              Search :
             </div>
             <div class="col-4 input-group input_search">
               <input type="text" class="form-control border-right-0 search_box" placeholder="Search for..." aria-label="Search for...">
@@ -81,12 +81,130 @@
                 </button>
               </span>
             </div>
-            <div class="col-2 word_view">
-              view by :
+            <div class="col-1 word_view">
+              View by :
             </div>
-            
-
+            <div class="col-2 dropdown program_block">
+              <button class="btn btn-secondary dropdown-toggle btn-sm border-0 program_button" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                แผนการเรียน
+              </button>
+              <div class="dropdown-menu program_dropdown" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">ปริญญาโทแผน ก1</a>
+                <a class="dropdown-item" href="#">ปริญญาโทแผน ก2</a>
+                <a class="dropdown-item" href="#">ปริญญาโทแผน ข</a>
+                <a class="dropdown-item" href="#">ปริญญาเอกแผน 1.1</a>
+                <a class="dropdown-item" href="#">ปริญญาเอกแผน 2.1</a>
+                <a class="dropdown-item" href="#">ทั้งหมด</a>
+              </div>
+            </div>
+            <div class="col-2 class_block">
+              <input class="form-control form-control-sm input_class" type="text" placeholder="ภาคการศึกษา ex.2560/1">
+            </div>
+            <div class="col-1 word_sort">
+              Sort by :
+            </div>
+            <div class="col-1 dropdown date_block">
+              <button class="btn btn-secondary dropdown-toggle btn-sm border-0 date_button" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                วันที่
+              </button>
+              <div class="dropdown-menu date_dropdown" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">ล่าสุด</a>
+                <a class="dropdown-item" href="#">เก่าสุด</a>
+              </div>
+            </div>
           </div>
+
+          <!--table of publication list-->
+          <table class="table table-bordered table-striped table_public">
+            <thead class="TablePublic_head">
+              <tr>
+                <th>ลำดับที่</th>
+                <th>Publication Name</th>
+                <th>นักศึกษาผู้จัดทำ</th>
+                <th>อาจารย์ที่ปรึกษา</th>
+                <th>บุคคลภายนอก</th>
+                <th>แผนการเรียน</th>
+                <th>ประจำภาคการศึกษา</th>
+                <th>การสัมมนา</th>
+                <th>การตีพิมพ์</th>
+                <th>วันที่เผยแพร่</th>
+                <th>Edit</th>
+                <th>Delete</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td><a href="#">การตรวจหาเนื้องอกจากภาพถ่ายx-ray</a></td>
+                <td>
+                  1. ธนทัต ฐานียณัฏฐ์ <br>
+                  2. ศุภนิดา สรญาณธนาวุธ
+                </td>
+                <td>ศันสนีย์ เอื้อพันธ์วิริยะกุล</td>
+                <td>ตาริกา รังษีวงค์</td>
+                <td>ปริญญาโทแผน ก1</td>
+                <td>2560/1</td>
+                <td><img src="pic/check.png" class="conference_status"></td>
+                <td><img src="pic/cross.png" class="journal_status"></td>
+                <td>30 ส.ค. 60</td>
+                <td><button class="border-0 EditPublic_button"><img src="pic/pencil.png" width="24 px" height="24 px" class="pencil_pic"></td>
+                <td>
+                  <div class="form-check check_block">
+                    <label class="form-check-label">
+                      <input class="form-check-input check" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                    </label>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td><a href="#">การตรวจหาเนื้องอกจากภาพถ่ายx-ray</a></td>
+                <td>
+                  1. ธนทัต ฐานียณัฏฐ์ <br>
+                  2. ศุภนิดา สรญาณธนาวุธ
+                </td>
+                <td>ศันสนีย์ เอื้อพันธ์วิริยะกุล</td>
+                <td>-</td>
+                <td>ปริญญาโทแผน ก1</td>
+                <td>2560/1</td>
+                <td><img src="pic/check.png" class="conference_status"></td>
+                <td><img src="pic/cross.png" class="journal_status"></td>
+                <td>30 ส.ค. 60</td>
+                <td><button class="border-0 EditPublic_button"><img src="pic/pencil.png" width="24 px" height="24 px" class="pencil_pic"></td>
+                <td>
+                  <div class="form-check check_block">
+                    <label class="form-check-label">
+                      <input class="form-check-input check" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                    </label>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td><a href="#">การตรวจหาเนื้องอกจากภาพถ่ายx-ray</a></td>
+                <td>
+                  1. ธนทัต ฐานียณัฏฐ์ <br>
+                  2. ศุภนิดา สรญาณธนาวุธ
+                </td>
+                <td>ศันสนีย์ เอื้อพันธ์วิริยะกุล</td>
+                <td>ตาริกา รังษีวงค์</td>
+                <td>ปริญญาโทแผน ก1</td>
+                <td>2560/1</td>
+                <td><img src="pic/check.png" class="conference_status"></td>
+                <td><img src="pic/check.png" class="journal_status"></td>
+                <td>30 ส.ค. 60</td>
+                <td><button class="border-0 EditPublic_button"><img src="pic/pencil.png" width="24 px" height="24 px" class="pencil_pic"></td>
+                <td>
+                  <div class="form-check check_block">
+                    <label class="form-check-label">
+                      <input class="form-check-input check" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                    </label>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
         </div>
     </div>
 
