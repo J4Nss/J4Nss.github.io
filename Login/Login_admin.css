@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+@import url('https://fonts.googleapis.com/css?family=Kanit:600');
+@import url('https://fonts.googleapis.com/css?family=Athiti');
+/*--------------bg--------------*/
+body {
+	background-color: #F2E0F7;
+}
+
+/*--------------Header--------------*/
+.header1 {
+	top: 80px;
+	padding-left: 22%;
+}
+
+.app_name {
+	font-family: "Roboto";
+	font-size: 60px;
+	color: #9a72a0;
+	padding-top: 15px;
+}
+
+.university_name {
+	font-family: "Roboto";
+	font-size :40px;
+	color: #9a72a0;
+}
+
+.header2 {
+	top: 120px;
+	margin: auto;
+	padding-left: 14%;
+	font-family: "Athiti";
+	font-size: 30px;
+	color: #9a72a0;
+}
+
+.content1 {
+	top: 140px;
+	margin: auto;
+}
+
+.cmu_account {
+	
+	padding-top: 4px;
+	font-family: "Athiti";
+	font-size: 20px;
+	color: #9a72a0;
+}
+
+.content2 {
+	top: 160px;
+	margin: auto;
+}
+
+.cmu_password {
+	padding-top: 4px;
+	font-family: "Athiti";
+	font-size: 20px;
+	color: #9a72a0;
+}
+
+.content3 {
+	top: 190px;
+	margin: auto;
+	font-family: "Athiti";
+	font-size: 20px;
+	color: #9a72a0;
+}
+
+.login_admin {
+	margin: auto;
+	height: 70px;
+	width: 20%;
+	background-color: transparent;
+	border-color: purple;
+	color: purple;
+}
+
+.login_admin:hover {
+	border-color: purple;
+	background-color: purple;
+	color: white;
+}
+
+.login_admin:focus {
+	box-shadow: 0 0 0 3px purple !important;
+}
