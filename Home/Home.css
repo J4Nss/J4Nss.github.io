@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+@import url('https://fonts.googleapis.com/css?family=Kanit:600');
+@import url('https://fonts.googleapis.com/css?family=Athiti');
+/*--------------bg--------------*/
+body {
+	background-color: #F2E0F7;
+}
+
+/*--------------Header--------------*/
+.header {
+	top: 80px;
+	padding-left: 22%;
+}
+
+.app_name {
+	font-family: "Roboto";
+	font-size: 60px;
+	color: #9a72a0;
+	padding-top: 15px;
+}
+
+.university_name {
+	font-family: "Roboto";
+	font-size :40px;
+	color: #9a72a0;
+}
+
+.content1 {
+	top: 120px;
+}
+
+.login_student {
+	margin: auto;
+	height: 90px;
+	width: 30%;
+	border-color: purple;
+	color: purple;
+}
+
+.login_student:hover {
+	border-color: purple;
+	background-color: purple;
+	color: white;
+}
+
+.login_student:focus {
+	box-shadow: 0 0 0 3px purple !important;
+}
+
+.content2 {
+	top: 150px;
+}
+
+.login_admin {
+	margin: auto;
+	height: 90px;
+	width: 30%;
+	border-color: purple;
+	color: purple;
+}
+
+.login_admin:hover {
+	border-color: purple;
+	background-color: purple;
+	color: white;
+}
+
+.login_admin:focus {
+	box-shadow: 0 0 0 3px purple !important;
+}
