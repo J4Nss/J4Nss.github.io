@@ -31,7 +31,7 @@
     	<div class="row col-12">
         	<div class="col-4 user_name">User Name</div>
         	<div class="col-1 logout_img">
-        		<button class="button_logout border-0" data-toggle="tooltip" data-placement="top" title="Logout">
+        		<button onclick="window.location.href='Login_admin.html'" class="button_logout border-0" data-toggle="tooltip" data-placement="top" title="Logout">
         	    	<img src="pic/logout.png">
         	    </button>
         	</div>
@@ -43,9 +43,9 @@
     	<div class="col-2 menu">
         	<nav class="nav flex-column">
             	<a class="nav-link dash_menu" href="#">Dashboard</a>
-            	<a class="nav-link StudentData_menu" href="#">Student Data</a>
-            	<a class="nav-link public_menu" href="#">Publication</a>
-            	<a class="nav-link course_menu" href="#">Course</a>
+            	<a class="nav-link StudentData_menu" href="Student_list_admin.html">Student Data</a>
+            	<a class="nav-link public_menu" href="Publication_list_admin.html">Publication</a>
+            	<a class="nav-link course_menu" href="Course_list_admin.html">Course</a>
             	<a class="nav-link QECE_menu" href="#">QE/CE Test</a>
             	<a class="nav-link form_menu" href="#">Form</a>
         	</nav>
@@ -64,7 +64,7 @@
     	        	<button type="button" class="btn btn-danger delete_button">Delete</button>
     	        </div>
     	        <div class="col-1 update_block">
-    	        	<button type="button" class="btn btn-secondary Update_button">Update</button>
+    	        	<button type="button" class="btn btn-secondary update_button">Update</button>
     	        </div>
     	    </div>
     	    <!--classify course section-->
