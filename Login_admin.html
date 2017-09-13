@@ -30,6 +30,7 @@
     <div class="row col-6 header2">Login สำหรับคณาจารย์/เจ้าหน้าที่</div>
 
     <!-- Content -->
+    <form method="post" name="Login_admin" action="Student_list_admin.html" onSubmit="return checkForm(this)">
     <div class="row col-6 content1">
     	<div class="col-3 cmu_account">CMU Account: </div>
     	<div class="col-8"><input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="ex. xxx@cmu.ac.th"></div>
@@ -41,5 +42,25 @@
     <div class="row col-12 content3">
     	<button class="btn btn-primary btn-lg login_admin" type="submit">Login</button>
     </div>
+    </form>
 </body>
 </html>
+<script>
+    function checkForm(){
+        if (document.getElementById("exampleInputEmail1").value==""){
+            alert("Please fill data");
+            document.getElementById("exampleInputEmail1").focus()
+            return false;
+        } else if (document.getElementById("exampleInputPassword1").value==""){
+            alert("Please fill data");
+            document.getElementById("exampleInputPassword1").focus();
+            return false;
+        } else
+            return true;
+
+
+    }
+    function saveForm(){
+
+    }
+</script>
