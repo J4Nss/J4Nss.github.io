@@ -47,7 +47,8 @@
               <a class="nav-link public_menu" href="Publication_list_admin.html">Publication</a>
               <a class="nav-link course_menu" href="Course_list_admin.html">Course</a>
             	<a class="nav-link QECE_menu" href="QECE_test_admin.html">QE/CE Test</a>
-            	<a class="nav-link form_menu" href="Form_admin.html">Form</a>
+            	<a class="nav-link form_menu" href="Form_admin.html">Download</a>
+              <a class="nav-link admin_menu" href="#">Add Admin</a>
           	</nav>
         </div>
 
@@ -125,8 +126,7 @@
                 <th>บุคคลภายนอก</th>
                 <th>แผนการเรียน</th>
                 <th>ประจำภาคการศึกษา</th>
-                <th>การสัมมนา</th>
-                <th>การตีพิมพ์</th>
+                <th>ประเภทconference/journal</th>
                 <th>วันที่เผยแพร่</th>
                 <th>Edit</th>
                 <th>Delete</th>
@@ -144,8 +144,7 @@
                 <td>ตาริกา รังษีวงค์</td>
                 <td>ปริญญาโทแผน ก1</td>
                 <td>2560/1</td>
-                <td><img src="pic/check.png" class="conference_status"></td>
-                <td><img src="pic/cross.png" class="journal_status"></td>
+                <td>Conference ในประเทศ</td>
                 <td>30 ส.ค. 60</td>
                 <td><button class="border-0 EditPublic_button"><img src="pic/pencil.png" width="24 px" height="24 px" class="pencil_pic"></td>
                 <td>
@@ -167,8 +166,7 @@
                 <td>-</td>
                 <td>ปริญญาโทแผน ก1</td>
                 <td>2560/1</td>
-                <td><img src="pic/check.png" class="conference_status"></td>
-                <td><img src="pic/cross.png" class="journal_status"></td>
+                <td>Conference ในประเทศ</td>
                 <td>30 ส.ค. 60</td>
                 <td><button class="border-0 EditPublic_button"><img src="pic/pencil.png" width="24 px" height="24 px" class="pencil_pic"></td>
                 <td>
@@ -190,8 +188,7 @@
                 <td>ตาริกา รังษีวงค์</td>
                 <td>ปริญญาโทแผน ก1</td>
                 <td>2560/1</td>
-                <td><img src="pic/check.png" class="conference_status"></td>
-                <td><img src="pic/check.png" class="journal_status"></td>
+                <td>Conference ในประเทศ</td>
                 <td>30 ส.ค. 60</td>
                 <td><button class="border-0 EditPublic_button"><img src="pic/pencil.png" width="24 px" height="24 px" class="pencil_pic"></td>
                 <td>
@@ -207,6 +204,14 @@
 
         </div>
     </div>
+
+
+    <script>
+      //for tooltip
+      $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip(); 
+      });
+    </script>
 
 </body>
 </html>
