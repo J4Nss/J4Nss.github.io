@@ -143,25 +143,39 @@
 	font-family: "Roboto";
 }
 
-.subcontent {
+.boxcontent {
 	left: 2%;
 	top: 10%;
-	background-color: #CC99CC;
+	background-color: #fcfcfc;
+	box-shadow: -3px -3px 20px #e8e5e5;
+	border-radius: 5px;
+}
+
+.file_list {
+	padding-left: 2%;
+	top: 20px;
 }
 
 .filename {
-	margin-top: 1.5%;
-	margin-bottom: 1.5%;
-	color: white;
 	font-family: "Athiti";
-	font-size: 22px;
+	font-size: 20px;
+	display: inline-block;
 }
 
 .download_block {
-	margin-left: 47%;
-	padding-right: 0%;
+	display: inline-block;
+	position: absolute;
+	right: 0%;
+	text-align: right;
+	top: 8px;
 }
 
 .download_button {
 	font-family: "Roboto";
+	background-color: #9a72a0;
+	color: white;
+}
+
+.download_button:hover {
+	background-color: #75527a;
 }

@@ -53,14 +53,14 @@
     	<!--Content-->
     	<div class="col-10 content">
     	    <!--Page Name-->
-    	    <div class="row col-12 page_name">Form</div>
+    	    <div class="row col-12 page_name">Download</div>
     	    <!--Add, Delete, Update button-->
     	    <div class="row col-12">
     	        <div class="col-1 add_block">
     	        	<button type="button" class="btn btn-primary add_button">Add File</button>
     	        </div>
     	    </div>
-    	    <div class="row col-12 subcontent">
+    	    <!--div class="row col-12 boxcontent">
     	    	<div class="col-5 filename" data-toggle="tooltip" data-placement="bottom" title="File Description will be add soon.">
   					ชื่อไฟล์1.pdf
 				</div>
@@ -73,6 +73,46 @@
 				<div class="col-1 filename download_block">
     	        	<button type="button" class="btn btn-light download_button">Download</button>
     	        </div>
-    	    </div>
+    	    </div-->
+            <ul class="row col-12 list-group file_list">
+                <li class="list-group-item filename"> 
+                    <a data-toggle="tooltip" data-placement="right" title="File Description will be add soon.">ชื่อไฟล์1.pdf</a>
+                    <div class="col-2 download_block">
+                        <button type="button" class="btn download_button">Download</button>
+                    </div>
+                </li>
+                <li class="list-group-item filename"> 
+                    <a data-toggle="tooltip" data-placement="right" title="File2 Description will be add soon.">ชื่อไฟล์2.pdf</a>
+                    <div class="col-2 download_block">
+                        <button type="button" class="btn download_button">Download</button>
+                    </div>
+                </li>
+                <li class="list-group-item filename"> 
+                    <a data-toggle="tooltip" data-placement="right" title="บลาๆๆๆๆๆ">ชื่อไฟล์3.pdf</a>
+                    <div class="col-2 download_block">
+                        <button type="button" class="btn download_button">Download</button>
+                    </div>
+                </li>
+                <li class="list-group-item filename"> 
+                    <a data-toggle="tooltip" data-placement="right" title="File Description ">ชื่อไฟล์4.pdf</a>
+                    <div class="col-2 download_block">
+                        <button type="button" class="btn download_button">Download</button>
+                    </div>
+                </li>
+                <li class="list-group-item filename"> 
+                    <a data-toggle="tooltip" data-placement="right" title="ไฟล์แบบฟอร์มข้อเสนอโครงการ">ชื่อไฟล์5.pdf</a>
+                    <div class="col-2 download_block">
+                        <button type="button" class="btn download_button">Download</button>
+                    </div>
+                </li>
+            </ul>
+
+
+            <script>
+                //for tooltip
+                $(document).ready(function(){
+                    $('[data-toggle="tooltip"]').tooltip(); 
+                });
+            </script>
 </body>
 </html>
