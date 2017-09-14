@@ -47,7 +47,8 @@
             	<a class="nav-link public_menu" href="Publication_list_admin.html">Publication</a>
             	<a class="nav-link course_menu" href="Course_list_admin.html">Course</a>
             	<a class="nav-link QECE_menu" href="QECE_test_admin.html">QE/CE Test</a>
-            	<a class="nav-link form_menu" href="Form_admin.html">Form</a>
+            	<a class="nav-link form_menu" href="Form_admin.html">Download</a>
+                <a class="nav-link admin_menu" href="#">Add Admin</a>
         	</nav>
     	</div>
 
@@ -98,7 +99,7 @@
         	        	<th>ชื่อวิชา</th>
         	        	<th>ผู้สอน</th>
         	       		<th>ประเภท</th>
-        	        	<th>สถานะ</th>
+        	        	<th>สถานะการเปิดสอน</th>
         	        	<th>Edit</th>
         	        	<th>Delete</th>
         	      	</tr>
@@ -196,5 +197,13 @@
         	</table>
 		</div>
     </div>
+
+    <script>
+        //for tooltip
+        $(document).ready(function(){
+          $('[data-toggle="tooltip"]').tooltip(); 
+        });
+    </script>
+
 </body>
 </html>
