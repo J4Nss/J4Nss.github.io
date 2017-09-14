@@ -56,24 +56,21 @@
     	    <div class="row col-12 page_name">QE/CE Test</div>
     	    <!--classify subject section-->
     	    <div class="row col-12 classify_block">
-    	        <div class="col-1 word_search">วิชา : </div>
-    	        <div class="col-5 input-group input_search">
-    	        	<input type="text" class="form-control border-right-0 search_box" placeholder="Search for..." aria-label="Search for...">
-    	        	<span class="input-group-btn border-left-0">
-    	            	<button class="btn btn-secondary search_button border-left-0" type="button">
-    	            		<img src="pic/search.png" width="18 px" height="18 px">
-    	            	</button>
-    	         	</span>
+    	        <div class="col-1 word_suject">วิชา : </div>
+    	        <div class="col-5 dropdown subject_block">
+    	        	<button class="btn btn-secondary dropdown-toggle border-0 suject_button" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                		กรุณาเลือกวิชาที่ต้องการแจ้งผลสอบ
+              		</button>
+              		<div class="dropdown-menu subject_dropdown" aria-labelledby="dropdownMenuButton">
+                		<a class="dropdown-item" href="#">261791 - SEMINAR IN COMP ENGR</a>
+                		<a class="dropdown-item" href="#">261781 - SOFTWARE PROJECT MANAGEMENT</a>
+                		<a class="dropdown-item" href="#">261753 - COMPUTER VISION</a>
+                		<a class="dropdown-item" href="#">261732 - QUEUEING THEORY</a>
+              		</div>
     	        </div>
-    	        <div class="col-2 word_view">วันที่สอบ : </div>
-    	        <div class="col-2 dropdown">
-    	        	<button class="btn btn-secondary dropdown-toggle btn-sm border-0 TypeQECE_button" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        วัน/เดือน/ปี 
-                    </button>
-        	      	<div class="dropdown-menu TypeQECE_dropdown" aria-labelledby="dropdownMenuButton">
-        	        	<!-- <a class="dropdown-item" href="#">Mandatory</a>
-        	        	<a class="dropdown-item" href="#">Elective</a> -->
-        	      	</div>
+    	        <div class="col-2 word_DateTest">วันที่สอบ : </div>
+    	        <div class="col-3 DateTest_block">
+    	        	<input class="form-control DateTest_input" type="date" placeholder="Default input">
         	    </div>
         	</div>
         	<!--table of course list-->
@@ -96,6 +93,7 @@
   								<label class="form-check-label">
     								<input class="form-check-input" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="..."> ผ่าน
   								</label>
+  								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   								<label class="form-check-label">
     								<input class="form-check-input" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="..."> ไม่ผ่าน
   								</label>
@@ -104,7 +102,7 @@
              		</tr>
              	</tbody>
         	</table>
-        <!--Add, Delete, Update button-->
+        <!--Update button-->
     	<div class="row col-12">
 	        <div class="col-1 update_block">
     	        <button type="button" class="btn btn-secondary update_button">Update</button>

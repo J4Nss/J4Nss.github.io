@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:700');
 @import url('https://fonts.googleapis.com/css?family=Kanit:600');
 @import url('https://fonts.googleapis.com/css?family=Athiti');
+@import url('https://fonts.googleapis.com/css?family=Mitr');
 /*=============Banner============*/
 .nav_block {
 	background-color: #F2E0F7;
@@ -138,38 +139,50 @@
 	padding-top: 10px;
 }
 
-.word_search {
-	font-family: "Athiti";
-	font-size: 18px;
+.word_suject {
+	font-family: "Mitr";
+	font-size: 20px;
 	padding-right: 0%;
 	padding-top: 5px;
+	text-align: center;
 }
 
-.input_search {
+.subject_block {
 	padding-left: 0%;
 }
 
-.search_box {
-	font-family: "Athiti";
-}
-
-.search_button {
-	background-color: transparent;
-	border-color: #d9d9d9;
-}
-
-.search_button:hover {
-	background-color: transparent;
-	border-color: #d9d9d9;
-}
-
-.word_view {
+.suject_button {
 	font-family: "Athiti";
 	font-size: 18px;
+	background-color: #d9d9d9;
+	color: #707070;
+	width: 100%;
+}
+
+.suject_button:focus {
+	color: white;
+}
+
+.subject_dropdown {
+	font-family: "Athiti";
+	font-size: 18px;
+}
+
+.word_DateTest {
+	font-family: "Mitr";
+	font-size: 20px;
 	padding-top: 5px;
 	padding-right: 0%;
 	padding-left: 0%;
 	text-align: right;
+}
+
+.DateTest_block {
+	padding-right: 0%;
+}
+
+.DateTest_input {
+	font-family: "Athiti";
 }
 
 .TypeQECE_button {
