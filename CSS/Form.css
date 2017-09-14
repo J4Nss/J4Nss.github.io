@@ -118,6 +118,17 @@
 	color: #F2E0F7;
 }
 
+.admin_menu {
+	font-family: "Kanit";
+	color: white;
+	font-size: 23px;
+}
+
+.admin_menu:hover {
+	background-color: #9a72a0;
+	color: #F2E0F7;
+}
+
 /*========================================*/
 
 
@@ -141,14 +152,6 @@
 
 .add_button {
 	font-family: "Roboto";
-}
-
-.boxcontent {
-	left: 2%;
-	top: 10%;
-	background-color: #fcfcfc;
-	box-shadow: -3px -3px 20px #e8e5e5;
-	border-radius: 5px;
 }
 
 .file_list {
