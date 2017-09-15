@@ -150,6 +150,31 @@
 	padding-top: 10px;
 }
 
+.word_search {
+	font-family: "Roboto";
+	font-size: 18px;
+	padding-right: 0%;
+	padding-top: 5px;
+}
+
+.input_search {
+	padding-left: 0%;
+}
+
+.search_box {
+	font-family: "Athiti";
+}
+
+.search_button {
+	background-color: transparent;
+	border-color: #d9d9d9;
+}
+
+.search_button:hover {
+	background-color: transparent;
+	border-color: #d9d9d9;
+}
+
 .word_sort {
 	font-family: "Roboto";
 	font-size: 18px;
@@ -160,7 +185,6 @@
 
 .date_block {
 	padding-right: 0%;
-	width: 100%;
 }
 
 .date_button {
