@@ -57,58 +57,51 @@
     	    <div class="row col-12 page_name">QE/CE Test</div>
     	    <!--classify subject section-->
     	    <div class="row col-12 classify_block">
-    	        <div class="col-1 word_suject">วิชา : </div>
-    	        <div class="col-5 dropdown subject_block">
-    	        	<button class="btn btn-secondary dropdown-toggle border-0 suject_button" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                		กรุณาเลือกวิชาที่ต้องการแจ้งผลสอบ
-              		</button>
-              		<div class="dropdown-menu subject_dropdown" aria-labelledby="dropdownMenuButton">
-                		<a class="dropdown-item" href="#">261791 - SEMINAR IN COMP ENGR</a>
-                		<a class="dropdown-item" href="#">261781 - SOFTWARE PROJECT MANAGEMENT</a>
-                		<a class="dropdown-item" href="#">261753 - COMPUTER VISION</a>
-                		<a class="dropdown-item" href="#">261732 - QUEUEING THEORY</a>
-              		</div>
-    	        </div>
-    	        <div class="col-2 word_DateTest">วันที่สอบ : </div>
-    	        <div class="col-3 DateTest_block">
-    	        	<input class="form-control DateTest_input" type="date" placeholder="Default input">
-        	    </div>
+    	        <div class="col-1 word_sort">
+                    Sort by :
+                </div>
+                <div class="col-2 dropdown date_block">
+                    <button class="btn btn-secondary dropdown-toggle btn-sm border-0 date_button" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        เทอมที่จัดสอบ
+                    </button>
+                    <div class="dropdown-menu date_dropdown" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">ใหม่สุด</a>
+                        <a class="dropdown-item" href="#">เก่าสุด</a>
+                    </div>
+                </div>
         	</div>
         	<!--table of course list-->
         	<table class="table table-bordered table-striped table_QECE">
         	    <thead class="TableQECE_head">
         	    	<tr>
         	        	<th>ลำดับที่</th>
-        	        	<th>รหัสนักศึกษา</th>
-        	        	<th>ชื่อนักศึกษา</th>
-        	        	<th>ผลการสอบ</th>
+        	        	<th>หัวข้อการสอบ</th>
+        	        	<th>เทอมที่จัดสอบ</th>
         	      	</tr>
         	    </thead>
         	    <tbody>
             		<tr>
                 		<th scope="row">1</th>
-                		<td>570610609</td>
-                		<td>ศุภนิดา สรญาณธนาวุธ</td>
-                		<td>
-                			<div class="form-check">
-  								<label class="form-check-label">
-    								<input class="form-check-input" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="..."> ผ่าน
-  								</label>
-  								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  								<label class="form-check-label">
-    								<input class="form-check-input" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="..."> ไม่ผ่าน
-  								</label>
-							</div>
-                		</td>
+                		<td>XXXXXXXXXXXX</td>
+                		<td>2/2559</td>
              		</tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>XXXXXXXXXXXX</td>
+                        <td>1/2559</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>XXXXXXXXXXXX</td>
+                        <td>2/2558</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>XXXXXXXXXXXX</td>
+                        <td>1/2558</td>
+                    </tr>
              	</tbody>
         	</table>
-        <!--Update button-->
-    	<div class="row col-12">
-	        <div class="col-1 update_block">
-    	        <button type="button" class="btn btn-secondary update_button">Update</button>
-    	    </div>
-    	</div>
 
         <script>
             //for tooltip
