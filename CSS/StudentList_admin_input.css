@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+@import url('https://fonts.googleapis.com/css?family=Kanit:600');
+@import url('https://fonts.googleapis.com/css?family=Athiti');
+/*=============Banner============*/
+.nav_block {
+	background-color: #F2E0F7;
+}
+
+.app_name {
+	font-family: "Kanit";
+	font-size :25px;
+	color: #9a72a0;
+}
+
+.university_name{
+	font-family: "Kanit";
+	font-size :20px;
+	color: #9a72a0;
+}
+
+.user_name {
+	font-family: "Roboto";
+	font-size: 20px;
+	color: #A4A4A4;
+	left: 65%;
+	text-align: right;
+}
+
+.logout_img {
+	left: 65%;
+}
+
+.button_logout {
+	background-color: transparent;
+
+}
+
+/*================================*/
+
+
+/*===========Menu================*/
+.content_block {
+	top: 115px;
+}
+
+.menu {
+	background-color: #707070;
+	height: 1000px;
+	position: fixed;
+	padding-left: 0%;
+	padding-right: 0%;
+}
+
+.dash_menu {
+	margin-top: 25px;
+	font-family: "Kanit";
+	color: white;
+	font-size: 23px;
+}
+
+.dash_menu:hover {
+	background-color: #9a72a0;
+	color: #F2E0F7;
+}
+
+.StudentData_menu {
+	font-family: "Kanit";
+	color: white;
+	font-size: 23px;
+}
+
+.StudentData_menu:hover {
+	background-color: #9a72a0;
+	color: #F2E0F7;
+}
+
+.public_menu {
+	font-family: "Kanit";
+	color: white;
+	font-size: 23px;
+}
+
+.public_menu:hover {
+	background-color: #9a72a0;
+	color: #F2E0F7;
+}
+
+.course_menu {
+	font-family: "Kanit";
+	color: white;
+	font-size: 23px;
+}
+
+.course_menu:hover {
+	background-color: #9a72a0;
+	color: #F2E0F7;
+}
+
+.QECE_menu {
+	font-family: "Kanit";
+	color: white;
+	font-size: 23px;
+}
+
+.QECE_menu:hover {
+	background-color: #9a72a0;
+	color: #F2E0F7;
+}
+
+.form_menu {
+	font-family: "Kanit";
+	color: white;
+	font-size: 23px;
+}
+
+.form_menu:hover {
+	background-color: #9a72a0;
+	color: #F2E0F7;
+}
+
+.admin_menu {
+	font-family: "Kanit";
+	color: white;
+	font-size: 23px;
+}
+
+.admin_menu:hover {
+	background-color: #9a72a0;
+	color: #F2E0F7;
+}
+
+/*========================================*/
+
+
+/*================Content===============*/
+.content {
+	left: 17%;
+	padding-right: 0%;
+}
+
+.page_name {
+	margin-top: 25px;
+	font-family: "Roboto";
+	font-size: 23px;
+	color: #A4A4A4;
+}
+
+.space {
+	margin-left: 5%;
+}
+
+.topic_font {
+	font-family: "Athiti";
+}
+
+.label_font {
+	font-family: "Athiti";
+}
+
+.add_block {
+	margin-left: 70%;
+	padding-left: 0%;
+}
+
+.add_button {
+	font-family: "Roboto";
+	width: 100%;
+}
+

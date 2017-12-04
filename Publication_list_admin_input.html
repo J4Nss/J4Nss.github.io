@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Data list</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" type="text/css" href="CSS/PublicationList_admin_input.css">
+  </head>
+  <body>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+      <!--Banner-->
+      <nav class="navbar fixed-top nav_block">
+        <div class="row col-12">
+          <img src="pic/cpe-logo.png" width="70 px" height="70 px" class="d-inline-block align-top" alt="">
+          <div class="row col-10">
+            <div class="col-10 app_name">MIS for CPE Students</div>
+            <div class="col-10 university_name">Chiang Mai University</div>
+          </div>
+        </div>  
+        <div class="row col-12">
+          <div class="col-4 user_name">User Name</div>
+          <div class="col-1 logout_img">
+            <button onclick="window.location.href='Login_admin.html'" class="button_logout border-0" data-toggle="tooltip" data-placement="top" title="Logout">
+              <img src="pic/logout.png">
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      <div class="row col-12 content_block">
+        <!--Menu-->
+        <div class="col-2 menu">
+          <nav class="nav flex-column">
+            <a class="nav-link dash_menu" href="#">Dashboard</a>
+            <a class="nav-link StudentData_menu" href="Student_list_admin.html">Student Data</a>
+            <a class="nav-link public_menu" href="Publication_list_admin.html">Publication</a>
+            <a class="nav-link course_menu" href="Course_list_admin.html">Course</a>
+            <a class="nav-link QECE_menu" href="QECE_test_admin.html">QE/CE Topic</a>
+            <a class="nav-link form_menu" href="Form_admin.html">Download</a>
+            <a class="nav-link admin_menu" href="#">Add Admin</a>
+          </nav>
+        </div>
+
+        <!--Content-->
+        <div class="col-10 content">
+          <!--Page Name-->
+          <div class="row col-12 page_name">
+            Add Publication
+          </div>
+          <br>
+          <div class="form-group row">
+			<label for="example-text-input" class="col-2 col-form-label space topic_font">ชื่องานวิจัย (ภาษาไทย):</label>
+			<div class="col-5">
+			    <input class="form-control label_font" type="text" value="" id="example-text-input" placeholder="i.e. ระบบการบริหารจัดการข้อมูลนักศึกษาภาควิชาวิศวกรรมคอมพิวเตอร์">
+			</div>
+		  </div>
+		  <div class="form-group row">
+			<label for="example-text-input" class="col-2 col-form-label space topic_font">ชื่องานวิจัย (ภาษาอังกฤษ):</label>
+			<div class="col-5">
+			    <input class="form-control label_font" type="text" value="" id="example-text-input" placeholder="i.e. MIS for CPE Students">
+			</div>
+		  </div>
+		  <div class="form-group row">
+			<label for="example-text-input" class="col-2 col-form-label space topic_font">นักศึกษาผู้จัดทำ:</label>
+			<div class="col-5">
+			    <input class="form-control label_font" type="text" value="" id="example-text-input" placeholder="i.e. ธนทัต">
+			</div>
+		  </div>
+		  <div class="form-group row">
+			<label for="example-text-input" class="col-2 col-form-label space topic_font">ชื่องานสัมมนา:</label>
+			<div class="col-5">
+			    <input class="form-control label_font" type="text" value="" id="example-text-input">
+			</div>
+		  </div>
+		  <div class="form-group row">
+			<label for="example-text-input" class="col-2 col-form-label space topic_font">ประเภทงานวิจัย:</label>
+			<div class="dropdown col-5">
+			  <button class="btn btn-secondary dropdown-toggle col-12 label_font" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			    ประเภทงานวิจัย
+			  </button>
+			  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+			    <a class="dropdown-item label_font" href="#">Conference ในประเทศ</a>
+			    <a class="dropdown-item label_font" href="#">Conference นอกประเทศ</a>
+			    <a class="dropdown-item label_font" href="#">Journal ในประเทศ</a>
+			    <a class="dropdown-item label_font" href="#">Journal นอกประเทศ</a>
+			  </div>
+			</div>
+		  </div>
+		  <div class="form-group row">
+			<label for="example-text-input" class="col-2 col-form-label space topic_font">วันที่เผยแพร่งานวิจัย:</label>
+			<div class="col-5">
+			    <input class="form-control label_font" type="date" value="" id="example-text-input" placeholder="">
+			</div>
+		  </div>
+		  <div class="form-group row">
+			<label for="example-text-input" class="col-2 col-form-label space topic_font">ฐานข้อมูลงานวิจัย:</label>
+			<div class="dropdown col-5">
+			  <button class="btn btn-secondary dropdown-toggle col-12 label_font" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			    ฐานข้อมูลงานวิจัย
+			  </button>
+			  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+			    <a class="dropdown-item label_font" href="#">IEEE</a>
+			    <a class="dropdown-item label_font" href="#">Scopus</a>
+			  </div>
+			</div>
+		  </div>
+		  <div class="form-group row">
+			<label for="example-text-input" class="col-2 col-form-label space topic_font">เทอมที่ทำงานวิจัย:</label>
+			<div class="col-5">
+			    <input class="form-control label_font" type="text" value="" id="example-text-input" placeholder="">
+			</div>
+		  </div>
+		  <div class="form-group row">
+			<label for="example-text-input" class="col-2 col-form-label space topic_font">ปีที่ทำงานวิจัย:</label>
+			<div class="col-5">
+			    <input class="form-control label_font" type="text" value="" id="example-text-input" placeholder="">
+			</div>
+		  </div>
+		  <div class="form-group row">
+			<label for="example-text-input" class="col-2 col-form-label space topic_font">ไฟล์งานวิจัย:</label>
+			<div class="col-5">
+				<label class="btn btn-default btn-file col-12">
+				    <input class="col-12 choose_file" type="file">
+				</label>
+			</div>
+		  </div>
+		  <br>
+		  <div class="form-group row col-12">
+			<div class="col-3 add_block">
+			    <button type="button" class="btn btn-primary btn-lg btn-block add_button">Add</button>
+			</div>
+		  </div>
+		  <br>
+        </div>
+
+</body>
+</html>
