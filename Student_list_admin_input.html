@@ -59,35 +59,34 @@
             Add Student Data
           </div>
           <br>
-          <form method="post" name="StudentList_admin_input" action="Student_list_admin.html" onSubmit="return checkForm(this)">
           <div class="form-group row">
 			<label for="example-text-input" class="col-2 col-form-label space topic_font">*รหัสนักศึกษา:</label>
 			<div class="col-5">
-			    <input class="form-control label_font" type="text" value="" id="exampleInputStdID" placeholder="i.e. 570610XXX">
+			    <input class="form-control label_font" type="text" value="" id="example-text-input" placeholder="i.e. 570610XXX">
 			</div>
 		  </div>
 		  <div class="form-group row">
 			<label for="example-text-input" class="col-2 col-form-label space topic_font">*ชื่อ:</label>
 			<div class="col-5">
-			    <input class="form-control label_font" type="text" value="" id="exampleInputStdFirstTh" placeholder="i.e. ธนทัต">
+			    <input class="form-control label_font" type="text" value="" id="example-text-input" placeholder="i.e. ธนทัต">
 			</div>
 		  </div>
 		  <div class="form-group row">
 			<label for="example-text-input" class="col-2 col-form-label space topic_font">*นามสกุล:</label>
 			<div class="col-5">
-			    <input class="form-control label_font" type="text" value="" id="exampleInputStdLastTh" placeholder="i.e. ฐานียณัฏฐ์">
+			    <input class="form-control label_font" type="text" value="" id="example-text-input" placeholder="i.e. ฐานียณัฏฐ์">
 			</div>
 		  </div>
 		  <div class="form-group row">
 			<label for="example-text-input" class="col-2 col-form-label space topic_font">*ชื่อ (ภาษาอังกฤษ):</label>
 			<div class="col-5">
-			    <input class="form-control label_font" type="text" value="" id="exampleInputStdFirstEng" placeholder="i.e. Tanatat">
+			    <input class="form-control label_font" type="text" value="" id="example-text-input" placeholder="i.e. Tanatat">
 			</div>
 		  </div>
 		  <div class="form-group row">
 			<label for="example-text-input" class="col-2 col-form-label space topic_font">*นามสกุล (ภาษาอังกฤษ):</label>
 			<div class="col-5">
-			    <input class="form-control label_font" type="text" value="" id="exampleInputStdLastEng" placeholder="i.e. Thaneeyanut">
+			    <input class="form-control label_font" type="text" value="" id="example-text-input" placeholder="i.e. Thaneeyanut">
 			</div>
 		  </div>
 		  <div class="form-group row">
@@ -148,7 +147,7 @@
 		  </div>
 		  <div class="form-group row">
 			<label for="example-text-input" class="col-2 col-form-label space topic_font">*ปีที่เข้าศึกษา:</label>
-			<div class="dropdown col-5">
+			<div class="dropdown dropup col-5">
 			  <button class="btn btn-secondary dropdown-toggle col-12 label_font" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 			    ปีที่เข้าศึกษา
 			  </button>
@@ -185,44 +184,11 @@
 		  <br>
 		  <div class="form-group row col-12">
 			<div class="col-3 add_block">
-			    <button type="button" class="btn btn-primary btn-lg btn-block add_button">Add</button>
+			    <button onclick="window.location.href='Student_list_admin.html'" type="button" class="btn btn-primary btn-lg btn-block add_button">Add</button>
 			</div>
 		  </div>
 		  <br>
-		  </form>
         </div>
 
 </body>
 </html>
-
-<script>
-    function checkForm(){
-        if (document.getElementById("exampleInputStdID").value==""){
-            alert("Please fill data");
-            document.getElementById("exampleInputStdID").focus()
-            return false;
-        } else if (document.getElementById("exampleInputStdFirstTh").value==""){
-            alert("Please fill data");
-            document.getElementById("exampleInputStdFirstTh").focus();
-            return false;
-        } else if (document.getElementById("exampleInputStdLastTh").value==""){
-            alert("Please fill data");
-            document.getElementById("exampleInputStdLastTh").focus();
-            return false;
-        } else if (document.getElementById("exampleInputStdFirstEng").value==""){
-            alert("Please fill data");
-            document.getElementById("exampleInputStdFirstEng").focus();
-            return false;
-        } else if (document.getElementById("exampleInputStdLastEng").value==""){
-            alert("Please fill data");
-            document.getElementById("exampleInputStdLastEng").focus();
-            return false;
-        } else
-            return true;
-
-
-    }
-    function saveForm(){
-
-    }
-</script>
