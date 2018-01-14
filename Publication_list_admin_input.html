@@ -10,7 +10,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 
     <!-- My CSS -->
-    <link rel="stylesheet" type="text/css" href="CSS/PublicationList_admin_input.css">
+		<link rel="stylesheet" type="text/css" href="CSS/PublicationList_admin_input.css">
+
+		<!-- JQuery -->
+		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
   </head>
   <body>
     <!-- Optional JavaScript -->
@@ -76,6 +79,19 @@
 						<div class="col-5">
 							<input class="form-control label_font" type="text" value="" id="example-text-input" placeholder="i.e. ธนทัต">
 						</div>
+						<div class="col-1">
+							<button onclick="myFunction1()" id="button1" style='display:block;'>+</button>
+						</div>
+					</div>
+					<div class="form-group row" id="myDIV" style='display:none;'>
+						<label for="example-text-input" class="col-2 col-form-label space topic_font">นักศึกษาผู้จัดทำคนที่ 2:</label>
+						<div class="col-5">
+							<input class="form-control label_font" type="text" value="" id="example-text-input" placeholder="i.e. ศุภนิดา">
+						</div>
+						<div class="col-2">
+							<button onclick="my1()">-</button><button onclick="myFunction2()" id="button2" style='display:block;'>+</button>
+						</div>
+						
 					</div>
 					<div class="form-group row">
 						<label for="example-text-input" class="col-2 col-form-label space topic_font">นักศึกษาผู้จัดทำคนที่ 2:</label>
@@ -212,7 +228,74 @@
 						</div>
 					</div>
 					<br>
+					<button onclick="myFunction1()" id="button1" style='display:block;'>เพิ่มนักศึกษาผู้จัดทำ</button>
+					
+					<div id="myDIV" style='display:none;'>
+						This is my DIV element.
+						<button onclick="my1()">delete</button><button onclick="myFunction2()" id="button2" style='display:block;'>เพิ่มนักศึกษาผู้จัดทำ</button>
+					</div>
+					<div id="myDIV2" style='display:none;'>
+						This is my DIV2 element.
+						<button onclick="my2()">delete</button>
+					</div>
         </div>
       </div>
 	</body>
 </html>
+
+<script>
+
+	function my1() {
+		var x1 = document.getElementById("myDIV");
+		var x2 = document.getElementById("button1");
+		var y1 = document.getElementById("myDIV2");
+		if (x1.style.display === "block" && y1.style.display === "block") {
+	      x1.style.display = "block";
+	  } else {
+				x1.style.display = "none";
+				x2.style.display = "block";
+		}
+	}
+	// function my1() {
+	// 	$( "button" ).click(function() {
+	// 		$( "#myDIV" ).remove();
+	// 	});
+	// }
+	function my2() {
+		var x1 = document.getElementById("myDIV");
+		var y1 = document.getElementById("myDIV2");
+		var y2 = document.getElementById("button2");
+		if (x1.style.display === "block" && y1.style.display === "block") {
+	      y1.style.display = "none";
+				y2.style.display = "block";
+	  }
+	}
+	
+	function myFunction1() {
+    var x1 = document.getElementById("myDIV");
+		var x2 = document.getElementById("button1");
+    if (x1.style.display === "none") {
+    	x1.style.display = "block";
+			x2.style.display = "none";
+    }
+	}
+	function myFunction2() {
+		var x1 = document.getElementById("myDIV");
+		var y1 = document.getElementById("myDIV2");
+		var y2 = document.getElementById("button2");
+		if (x1.style.display === "block" && y1.style.display === "none") {
+			y1.style.display = "block";
+			y2.style.display = "none";
+		}
+	}
+
+	// w3school.com
+	// function myFunction() {
+  //   var x = document.getElementById("myDIV");
+  //   if (x.style.display === "none") {
+  //       x.style.display = "block";
+  //   } else {
+  //       x.style.display = "none";
+  //   }
+	// }
+</script>
