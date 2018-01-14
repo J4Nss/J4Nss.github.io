@@ -168,11 +168,12 @@
 }
 
 .choose_file {
-    background-color: lightgrey;
+    color: white;
+    background-color: #868e96;
 }
 
 .btn-file {
     font-family: "Athiti";
-    background-color: lightgrey;
-    border-color: lightgrey;
+    background-color: #868e96;
+    border-color: #868e96;
 }

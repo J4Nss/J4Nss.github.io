@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Data list</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" type="text/css" href="CSS/StudentList_admin_input.css">
+  </head>
+  <body>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+      <!--Banner-->
+      <nav class="navbar fixed-top nav_block">
+        <div class="row col-12">
+          <img src="pic/cpe-logo.png" width="70 px" height="70 px" class="d-inline-block align-top" alt="">
+          <div class="row col-10">
+            <div class="col-10 app_name">MIS for CPE Students</div>
+            <div class="col-10 university_name">Chiang Mai University</div>
+          </div>
+        </div>  
+        <div class="row col-12">
+          <div class="col-4 user_name">User Name</div>
+          <div class="col-1 logout_img">
+            <button onclick="window.location.href='Login_admin.html'" class="button_logout border-0" data-toggle="tooltip" data-placement="top" title="Logout">
+              <img src="pic/logout.png">
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      <div class="row col-12 content_block">
+        <!--Menu-->
+        <div class="col-2 menu">
+          <nav class="nav flex-column">
+            <a class="nav-link dash_menu" href="#">Dashboard</a>
+            <a class="nav-link StudentData_menu" href="Student_list_admin.html">Student Data</a>
+            <a class="nav-link public_menu" href="Publication_list_admin.html">Publication</a>
+            <a class="nav-link course_menu" href="Course_list_admin.html">Course</a>
+            <a class="nav-link QECE_menu" href="QECE_test_admin.html">QE/CE Topic</a>
+            <a class="nav-link form_menu" href="Form_admin.html">Download</a>
+            <a class="nav-link admin_menu" href="#">Add Admin</a>
+          </nav>
+        </div>
+
+        <!--Content-->
+        
+        <div class="col-10 content">
+          <!--Page Name-->
+          <div class="row col-12 page_name">
+            Add Student Data
+          </div>
+          <br>
+          <form method="post" name="StudentList_admin_input" action="Student_list_admin.html" onSubmit="return checkForm(this)">
+          <div class="form-group row">
+			<label for="example-text-input" class="col-2 col-form-label space topic_font">*รหัสนักศึกษา:</label>
+			<div class="col-5">
+			    <input class="form-control label_font" type="text" value="" id="exampleInputStdID" placeholder="i.e. 570610XXX">
+			</div>
+		  </div>
+		  <div class="form-group row">
+			<label for="example-text-input" class="col-2 col-form-label space topic_font">*ชื่อ:</label>
+			<div class="col-5">
+			    <input class="form-control label_font" type="text" value="" id="exampleInputStdFirstTh" placeholder="i.e. ธนทัต">
+			</div>
+		  </div>
+		  <div class="form-group row">
+			<label for="example-text-input" class="col-2 col-form-label space topic_font">*นามสกุล:</label>
+			<div class="col-5">
+			    <input class="form-control label_font" type="text" value="" id="exampleInputStdLastTh" placeholder="i.e. ฐานียณัฏฐ์">
+			</div>
+		  </div>
+		  <div class="form-group row">
+			<label for="example-text-input" class="col-2 col-form-label space topic_font">*ชื่อ (ภาษาอังกฤษ):</label>
+			<div class="col-5">
+			    <input class="form-control label_font" type="text" value="" id="exampleInputStdFirstEng" placeholder="i.e. Tanatat">
+			</div>
+		  </div>
+		  <div class="form-group row">
+			<label for="example-text-input" class="col-2 col-form-label space topic_font">*นามสกุล (ภาษาอังกฤษ):</label>
+			<div class="col-5">
+			    <input class="form-control label_font" type="text" value="" id="exampleInputStdLastEng" placeholder="i.e. Thaneeyanut">
+			</div>
+		  </div>
+		  <div class="form-group row">
+			<label for="example-text-input" class="col-2 col-form-label space topic_font">*อาจารย์ที่ปรึกษา:</label>
+			<div class="dropdown dropup col-5">
+			  <button class="btn btn-secondary dropdown-toggle col-12 label_font" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			    อาจารย์ที่ปรึกษา
+			  </button>
+			  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+			    <a class="dropdown-item label_font" href="#">รศ.ดร.สรรพวรรธน์ กันตะบุตร</a>
+			    <a class="dropdown-item label_font" href="#">รศ.ดร.ศันสนีย์ เอื้อพันธ์วิริยะกุล</a>
+			    <a class="dropdown-item label_font" href="#">ผศ.ดร.นราธิป เที่ยงแท้</a>
+			    <a class="dropdown-item label_font" href="#">รศ.ดร.ตรัสพงศ์ ไทยอุปถัมภ์</a>
+			    <a class="dropdown-item label_font" href="#">รศ.ดร.จักรพงศ์ นาทวิชัย</a>
+			    <a class="dropdown-item label_font" href="#">ผศ.ดร.ลัชนา ระมิงค์วงศ์</a>
+			    <a class="dropdown-item label_font" href="#">อ.ดร.อานันท์ สีห์พิทักษ์เกียรติ</a>
+			    <a class="dropdown-item label_font" href="#">อ.ดร.พฤษภ์ บุญมา</a>
+			    <a class="dropdown-item label_font" href="#">Kenneth Cosh, Ph.D.,Asst. Prof.</a>
+			    <a class="dropdown-item label_font" href="#">รศ.ดร.ศักดิ์กษิต ระมิงค์วงศ์​</a>
+			    <a class="dropdown-item label_font" href="#">อ.โดม โพธิกานนท์</a>
+			    <a class="dropdown-item label_font" href="#">ผศ.ดร.นริศรา เอี่ยมคณิตชาติ</a>
+			    <a class="dropdown-item label_font" href="#">อ.ดร.ภาสกร แช่มประเสริฐ</a>
+			    <a class="dropdown-item label_font" href="#">ผศ.ดร.ยุทธพงษ์ สมจิต</a>
+			    <a class="dropdown-item label_font" href="#">ผศ.ดร.สันติ พิทักษ์กิจนุกูร</a>
+			    <a class="dropdown-item label_font" href="#">ผศ.ดร.กานต์ ปทานุคม</a>
+			    <a class="dropdown-item label_font" href="#">ผศ.ดร.อัญญา อาภาวัชรุตม์</a>
+			    <a class="dropdown-item label_font" href="#">อ.ดร.นวดนย์ คุณเลิศกิจ</a>
+			    <a class="dropdown-item label_font" href="#">อ.ดร. ปฏิเวธ วุฒิสารวัฒนา</a>
+			  </div>
+			</div>
+		  </div>
+		  <div class="form-group row">
+			<label for="example-text-input" class="col-2 col-form-label space topic_font">*ระดับการศึกษา:</label>
+			<div class="dropdown col-5">
+			  <button class="btn btn-secondary dropdown-toggle col-12 label_font" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			    ระดับการศึกษา
+			  </button>
+			  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+			    <a class="dropdown-item label_font" href="#">ปริญญาโท แผน ก1</a>
+			    <a class="dropdown-item label_font" href="#">ปริญญาโท แผน ก2</a>
+			    <a class="dropdown-item label_font" href="#">ปริญญาโท แผน ข</a>
+			    <a class="dropdown-item label_font" href="#">ปริญญาเอก แผน 1.1</a>
+			    <a class="dropdown-item label_font" href="#">ปริญญาเอก แผน 1.2</a>
+			  </div>
+			</div>
+		  </div>
+		  <div class="form-group row">
+			<label for="example-text-input" class="col-2 col-form-label space topic_font">*เทอมที่เข้าศึกษา:</label>
+			<div class="dropdown col-5">
+			  <button class="btn btn-secondary dropdown-toggle col-12 label_font" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			    เทอมที่เข้าศึกษา
+			  </button>
+			  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+			    <a class="dropdown-item label_font" href="#">1</a>
+			    <a class="dropdown-item label_font" href="#">2</a>
+			  </div>
+			</div>
+		  </div>
+		  <div class="form-group row">
+			<label for="example-text-input" class="col-2 col-form-label space topic_font">*ปีที่เข้าศึกษา:</label>
+			<div class="dropdown col-5">
+			  <button class="btn btn-secondary dropdown-toggle col-12 label_font" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			    ปีที่เข้าศึกษา
+			  </button>
+			  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+			    <a class="dropdown-item label_font" href="#">2553</a>
+			    <a class="dropdown-item label_font" href="#">2554</a>
+			    <a class="dropdown-item label_font" href="#">2555</a>
+			    <a class="dropdown-item label_font" href="#">2556</a>
+			    <a class="dropdown-item label_font" href="#">2557</a>
+			    <a class="dropdown-item label_font" href="#">2558</a>
+			    <a class="dropdown-item label_font" href="#">2559</a>
+			    <a class="dropdown-item label_font" href="#">2560</a>
+			  </div>
+			</div>
+		  </div>
+		  <div class="form-group row">
+			<label for="example-text-input" class="col-2 col-form-label space topic_font">เบอร์ติดต่อ:</label>
+			<div class="col-5">
+			    <input class="form-control label_font" type="text" value="" id="example-text-input" placeholder="i.e. 08X-XXX-XXXX">
+			</div>
+		  </div>
+		  <div class="form-group row">
+			<label for="example-text-input" class="col-2 col-form-label space topic_font">Facebook:</label>
+			<div class="col-5">
+			    <input class="form-control label_font" type="text" value="" id="example-text-input" placeholder="i.e. https://www.facebook.com/tanatat">
+			</div>
+		  </div>
+		  <div class="form-group row">
+			<label for="example-text-input" class="col-2 col-form-label space topic_font">Grad School:</label>
+			<div class="col-5">
+			    <input class="form-control label_font" type="text" value="" id="example-text-input">
+			</div>
+		  </div>
+		  <br>
+		  <div class="form-group row col-12">
+			<div class="col-3 add_block">
+			    <button type="button" class="btn btn-primary btn-lg btn-block add_button">Add</button>
+			</div>
+		  </div>
+		  <br>
+		  </form>
+        </div>
+        
+
+</body>
+</html>
+
+<script>
+    function checkForm(){
+        if (document.getElementById("exampleInputStdID").value==""){
+            alert("Please fill data");
+            document.getElementById("exampleInputStdID").focus()
+            return false;
+        } else if (document.getElementById("exampleInputStdFirstTh").value==""){
+            alert("Please fill data");
+            document.getElementById("exampleInputStdFirstTh").focus();
+            return false;
+        } else if (document.getElementById("exampleInputStdLastTh").value==""){
+            alert("Please fill data");
+            document.getElementById("exampleInputStdLastTh").focus();
+            return false;
+        } else if (document.getElementById("exampleInputStdFirstEng").value==""){
+            alert("Please fill data");
+            document.getElementById("exampleInputStdFirstEng").focus();
+            return false;
+        } else if (document.getElementById("exampleInputStdLastEng").value==""){
+            alert("Please fill data");
+            document.getElementById("exampleInputStdLastEng").focus();
+            return false;
+        } else
+            return true;
+
+
+    }
+    function saveForm(){
+
+    }
+</script>
