@@ -62,7 +62,7 @@
             Add Publication
           </div>
           <br>
-          <div class="form-group row">
+          			<div class="form-group row">
 						<label for="example-text-input" class="col-2 col-form-label space topic_font">*ชื่องานวิจัย (ภาษาไทย):</label>
 						<div class="col-5">
 							<input class="form-control input_font" type="text" value="" id="example-text-input" placeholder="i.e. ระบบการบริหารจัดการข้อมูลนักศึกษาภาควิชาวิศวกรรมคอมพิวเตอร์">
@@ -75,36 +75,54 @@
 						</div>
 					</div>
 					<div class="form-group row">
-						<label for="example-text-input" class="col-2 col-form-label space topic_font">*นักศึกษาผู้จัดทำคนที่ 1:</label>
-						<div class="col-5">
-							<input class="form-control input_font" type="text" value="" id="example-text-input" placeholder="i.e. ธนทัต">
+							<label for="example-text-input" class="col-2 col-form-label space topic_font">*นักศึกษาผู้จัดทำคนที่ 1:</label>
+							<div class="col-5">
+								<input class="form-control input_font" type="text" value="" id="example-text-input" placeholder="i.e. ธนทัต ฐานียณัฏฐ์">
+							</div>
+							<div>
+								<button onclick="increasePerson1()" id="button1" style='display:flex;' type="button" class="btn btn-primary btn-lg btn-block add_person_button">+</button>
+								<!-- <button onclick="increasePerson1()" id="button1" style='display:flex;'>+</button> -->
+							</div>
 						</div>
-						<div class="col-1">
-							<button onclick="myFunction1()" id="button1" style='display:block;'>+</button>
+	
+						<div class="form-group row" id="person1" style='display:none;'>
+							<label for="example-text-input" class="col-2 col-form-label space topic_font">นักศึกษาผู้จัดทำคนที่ 2:</label>
+							<div class="col-5">
+								<input class="form-control input_font" type="text" value="" id="example-text-input" placeholder="i.e. รัฐพล แก้วปินใจ">
+							</div>
+							<div>
+								<button onclick="deletePerson1()" id="button2_1" style='display:flex;' type="button" class="btn btn-danger btn-lg btn-block delete_person_button">x</button>
+								<!-- <button onclick="deletePerson1()" id="button2_1" style='display:flex;'>x</button> -->
+							</div>
+							<div class="col-1">
+								<button onclick="increasePerson2()" id="button2_2" style='display:flex;' type="button" class="btn btn-primary btn-lg btn-block add_person_button">+</button>
+								<!-- <button onclick="increasePerson2()" id="button2_2" style='display:flex;'>+</button> -->
+							</div>
 						</div>
-					</div>
-					<div class="form-group row" id="myDIV" style='display:none;'>
-						<label for="example-text-input" class="col-2 col-form-label space topic_font">นักศึกษาผู้จัดทำคนที่ 2:</label>
-						<div class="col-5">
-							<input class="form-control input_font" type="text" value="" id="example-text-input" placeholder="i.e. ศุภนิดา">
+	
+						<div class="form-group row" id="person2" style='display:none;'>
+							<label for="example-text-input" class="col-2 col-form-label space topic_font">นักศึกษาผู้จัดทำคนที่ 3:</label>
+							<div class="col-5">
+								<input class="form-control input_font" type="text" value="" id="example-text-input" placeholder="i.e. ภูริวัชร มนตรี">
+							</div>
+							<div>
+								<button onclick="deletePerson2()" id="button3_1" style='display:flex;' type="button" class="btn btn-danger btn-lg btn-block delete_person_button">x</button>
+							</div>
+							<div class="col-1">
+								<button onclick="increasePerson3()" id="button3_2" style='display:flex;' type="button" class="btn btn-primary btn-lg btn-block add_person_button">+</button>
+							</div>
 						</div>
-						<div class="col-2">
-							<button onclick="my1()">x</button><button onclick="myFunction2()" id="button2" style='display:block;'>+</button>
+	
+						<div class="form-group row" id="person3" style='display:none;'>
+							<label for="example-text-input" class="col-2 col-form-label space topic_font">นักศึกษาผู้จัดทำคนที่ 4:</label>
+							<div class="col-5">
+								<input class="form-control input_font" type="text" value="" id="example-text-input" placeholder="i.e. วัชนันท์ จันทาภากุล">
+							</div>
+							<div>
+								<button onclick="deletePerson3()" id="button4_1" style='display:flex;' type="button" class="btn btn-danger btn-lg btn-block delete_person_button">x</button>
+							</div>
 						</div>
-						
-					</div>
-					<div class="form-group row">
-						<label for="example-text-input" class="col-2 col-form-label space topic_font">นักศึกษาผู้จัดทำคนที่ 2:</label>
-						<div class="col-5">
-							<input class="form-control input_font" type="text" value="" id="example-text-input" placeholder="i.e. ศุภนิดา">
-						</div>
-					</div>
-					<div class="form-group row">
-						<label for="example-text-input" class="col-2 col-form-label space topic_font">นักศึกษาผู้จัดทำคนที่ 3:</label>
-						<div class="col-5">
-							<input class="form-control input_font" type="text" value="" id="example-text-input" placeholder="i.e. ตาริกา">
-						</div>
-					</div>
+					
 					<div class="form-group row">
 						<label for="example-text-input" class="col-2 col-form-label space topic_font">*อาจารย์ที่ปรึกษา:</label>
 						<div class="dropdown dropup col-5">
@@ -211,7 +229,7 @@
 								<a class="dropdown-item input_font" href="#">Scopus</a>
 							</div>
 						</div>
-		  		</div>
+		  			</div>
 					
 					<div class="form-group row">
 						<label for="example-text-input" class="col-2 col-form-label space topic_font">*ไฟล์งานวิจัย:</label>
@@ -228,7 +246,7 @@
 						</div>
 					</div>
 					<br>
-					<button onclick="myFunction1()" id="button1" style='display:block;'>เพิ่มนักศึกษาผู้จัดทำ</button>
+					<!-- <button onclick="myFunction1()" id="button1" style='display:block;'>เพิ่มนักศึกษาผู้จัดทำ</button>
 					
 					<div id="myDIV" style='display:none;'>
 						This is my DIV element.
@@ -237,7 +255,7 @@
 					<div id="myDIV2" style='display:none;'>
 						This is my DIV2 element.
 						<button onclick="my2()">delete</button>
-					</div>
+					</div> -->
         </div>
       </div>
 	</body>
@@ -245,15 +263,48 @@
 
 <script>
 
-	function my1() {
-		var x1 = document.getElementById("myDIV");
+	function increasePerson1() {
+		var x1 = document.getElementById("person1");
 		var x2 = document.getElementById("button1");
-		var y1 = document.getElementById("myDIV2");
-		if (x1.style.display === "block" && y1.style.display === "block") {
-	      x1.style.display = "block";
-	  } else {
-				x1.style.display = "none";
-				x2.style.display = "block";
+		if (x1.style.display === "none") {
+			x1.style.display = "flex";
+			x2.style.display = "none";
+		}
+	}
+	function increasePerson2() {
+		var x1 = document.getElementById("person1");
+		var y1 = document.getElementById("person2");
+		var y2_1 = document.getElementById("button2_1");
+		var y2_2 = document.getElementById("button2_2");
+		if (x1.style.display === "flex" && y1.style.display === "none") {
+			y1.style.display = "flex";
+			y2_1.style.display = "none";
+			y2_2.style.display = "none";
+		}
+	}
+
+	function increasePerson3() {
+		var x1 = document.getElementById("person1");
+		var y1 = document.getElementById("person2");
+		var z1 = document.getElementById("person3");
+		var z2_1 = document.getElementById("button3_1");
+		var z2_2 = document.getElementById("button3_2");
+		if (x1.style.display === "flex" && y1.style.display === "flex" && z1.style.display === "none") {
+			z1.style.display = "flex";
+			z2_1.style.display = "none";
+			z2_2.style.display = "none";
+		}
+	}
+
+	function deletePerson1() {
+		var x1 = document.getElementById("person1");
+		var x2 = document.getElementById("button1");
+		var y1 = document.getElementById("person2");
+		if (x1.style.display === "flex" && y1.style.display === "flex") {
+			x1.style.display = "flex";
+		} else {
+			x1.style.display = "none";
+			x2.style.display = "flex";
 		}
 	}
 	// function my1() {
@@ -261,31 +312,28 @@
 	// 		$( "#myDIV" ).remove();
 	// 	});
 	// }
-	function my2() {
-		var x1 = document.getElementById("myDIV");
-		var y1 = document.getElementById("myDIV2");
-		var y2 = document.getElementById("button2");
-		if (x1.style.display === "block" && y1.style.display === "block") {
-	      y1.style.display = "none";
-				y2.style.display = "block";
-	  }
+	function deletePerson2() {
+		var x1 = document.getElementById("person1");
+		var y1 = document.getElementById("person2");
+		var y2_1 = document.getElementById("button2_1");
+		var y2_2 = document.getElementById("button2_2");
+		if (x1.style.display === "flex" && y1.style.display === "flex") {
+			y1.style.display = "none";
+			y2_1.style.display = "flex";
+			y2_2.style.display = "flex";
+		}
 	}
-	
-	function myFunction1() {
-    var x1 = document.getElementById("myDIV");
-		var x2 = document.getElementById("button1");
-    if (x1.style.display === "none") {
-    	x1.style.display = "block";
-			x2.style.display = "none";
-    }
-	}
-	function myFunction2() {
-		var x1 = document.getElementById("myDIV");
-		var y1 = document.getElementById("myDIV2");
-		var y2 = document.getElementById("button2");
-		if (x1.style.display === "block" && y1.style.display === "none") {
-			y1.style.display = "block";
-			y2.style.display = "none";
+
+	function deletePerson3() {
+		var x1 = document.getElementById("person1");
+		var y1 = document.getElementById("person2");
+		var z1 = document.getElementById("person3");
+		var z2_1 = document.getElementById("button3_1");
+		var z2_2 = document.getElementById("button3_2");
+		if (x1.style.display === "flex" && y1.style.display === "flex" && z1.style.display === "flex") {
+			z1.style.display = "none";
+			z2_1.style.display = "flex";
+			z2_2.style.display = "flex";
 		}
 	}
 

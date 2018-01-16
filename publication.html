@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Data list</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+    <!-- My CSS -->
+		<link rel="stylesheet" type="text/css" href="CSS/PublicationList_admin_input.css">
+
+		<!-- JQuery -->
+		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  </head>
+  <body>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+      <!--Banner-->
+      <nav class="navbar fixed-top nav_block">
+        <div class="row col-12">
+          <img src="pic/cpe-logo.png" width="70 px" height="70 px" class="d-inline-block align-top" alt="">
+          <div class="row col-10">
+            <div class="col-10 app_name">MIS for CPE Students</div>
+            <div class="col-10 university_name">Chiang Mai University</div>
+          </div>
+        </div>  
+        <div class="row col-12">
+          <div class="col-4 user_name">User Name</div>
+          <div class="col-1 logout_img">
+            <button onclick="window.location.href='Login_admin.html'" class="button_logout border-0" data-toggle="tooltip" data-placement="top" title="Logout">
+              <img src="pic/logout.png">
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      <div class="row col-12 content_block">
+        <!--Menu-->
+        <div class="col-2 menu">
+          <nav class="nav flex-column">
+            <a class="nav-link dash_menu" href="#">Dashboard</a>
+            <a class="nav-link StudentData_menu" href="Student_list_admin.html">Student Data</a>
+            <a class="nav-link public_menu" href="Publication_list_admin.html">Publication</a>
+            <a class="nav-link course_menu" href="Course_list_admin.html">Course</a>
+            <a class="nav-link QECE_menu" href="QECE_test_admin.html">QE/CE Topic</a>
+            <a class="nav-link form_menu" href="Form_admin.html">Download</a>
+            <a class="nav-link admin_menu" href="#">Add Admin</a>
+          </nav>
+        </div>
+
+        <!--Content-->
+        <div class="col-10 content">
+          <!--Page Name-->
+          <div class="row col-12 page_name">
+            Add Publication
+          </div>
+          <br>
+
+					<div class="form-group row">
+						<label for="example-text-input" class="col-2 col-form-label space topic_font">*นักศึกษาผู้จัดทำคนที่ 1:</label>
+						<div class="col-5">
+							<input class="form-control input_font" type="text" value="" id="example-text-input" placeholder="i.e. ธนทัต">
+						</div>
+						<div>
+							<button onclick="increasePerson1()" id="button1" style='display:flex;' type="button" class="btn btn-primary btn-lg btn-block add_person_button">+</button>
+							<!-- <button onclick="increasePerson1()" id="button1" style='display:flex;'>+</button> -->
+						</div>
+					</div>
+
+					<div class="form-group row" id="person1" style='display:none;'>
+						<label for="example-text-input" class="col-2 col-form-label space topic_font">นักศึกษาผู้จัดทำคนที่ 2:</label>
+						<div class="col-5">
+							<input class="form-control input_font" type="text" value="" id="example-text-input" placeholder="i.e. ศุภนิดา">
+						</div>
+						<div>
+							<button onclick="deletePerson1()" id="button2_1" style='display:flex;' type="button" class="btn btn-danger btn-lg btn-block delete_person_button">x</button>
+							<!-- <button onclick="deletePerson1()" id="button2_1" style='display:flex;'>x</button> -->
+						</div>
+						<div class="col-1">
+							<button onclick="increasePerson2()" id="button2_2" style='display:flex;' type="button" class="btn btn-primary btn-lg btn-block add_person_button">+</button>
+							<!-- <button onclick="increasePerson2()" id="button2_2" style='display:flex;'>+</button> -->
+						</div>
+					</div>
+
+					<div class="form-group row" id="person2" style='display:none;'>
+						<label for="example-text-input" class="col-2 col-form-label space topic_font">นักศึกษาผู้จัดทำคนที่ 3:</label>
+						<div class="col-5">
+							<input class="form-control input_font" type="text" value="" id="example-text-input" placeholder="i.e. ตาริกา">
+						</div>
+						<div>
+							<button onclick="deletePerson2()" id="button3_1" style='display:flex;' type="button" class="btn btn-danger btn-lg btn-block delete_person_button">x</button>
+						</div>
+						<div class="col-1">
+							<button onclick="increasePerson3()" id="button3_2" style='display:flex;' type="button" class="btn btn-primary btn-lg btn-block add_person_button">+</button>
+						</div>
+					</div>
+
+					<div class="form-group row" id="person3" style='display:none;'>
+						<label for="example-text-input" class="col-2 col-form-label space topic_font">นักศึกษาผู้จัดทำคนที่ 4:</label>
+						<div class="col-5">
+							<input class="form-control input_font" type="text" value="" id="example-text-input" placeholder="i.e. ตาริกา">
+						</div>
+						<div>
+							<button onclick="deletePerson3()" id="button4_1" style='display:flex;' type="button" class="btn btn-danger btn-lg btn-block delete_person_button">x</button>
+						</div>
+					</div>
+					
+
+
+
+
+					<br>
+					<button onclick="myFunction1()" id="button1" style='display:flex;'>เพิ่มนักศึกษาผู้จัดทำ</button>
+					
+					<div id="person1" style='display:none;'>
+						This is my DIV element.
+						<button onclick="deletePerson1()">delete</button><button onclick="myFunction2()" id="button2_2" style='display:flex;'>เพิ่มนักศึกษาผู้จัดทำ</button>
+					</div>
+					<div id="person2" style='display:none;'>
+						This is my DIV2 element.
+						<button onclick="deletePerson2()">delete</button>
+					</div>
+        </div>
+      </div>
+	</body>
+</html>
+
+<script>
+
+	function increasePerson1() {
+		var x1 = document.getElementById("person1");
+		var x2 = document.getElementById("button1");
+		if (x1.style.display === "none") {
+			x1.style.display = "flex";
+			x2.style.display = "none";
+		}
+	}
+	function increasePerson2() {
+		var x1 = document.getElementById("person1");
+		var y1 = document.getElementById("person2");
+		var y2_1 = document.getElementById("button2_1");
+		var y2_2 = document.getElementById("button2_2");
+		if (x1.style.display === "flex" && y1.style.display === "none") {
+			y1.style.display = "flex";
+			y2_1.style.display = "none";
+			y2_2.style.display = "none";
+		}
+	}
+
+	function increasePerson3() {
+		var x1 = document.getElementById("person1");
+		var y1 = document.getElementById("person2");
+		var z1 = document.getElementById("person3");
+		var z2_1 = document.getElementById("button3_1");
+		var z2_2 = document.getElementById("button3_2");
+		if (x1.style.display === "flex" && y1.style.display === "flex" && z1.style.display === "none") {
+			z1.style.display = "flex";
+			z2_1.style.display = "none";
+			z2_2.style.display = "none";
+		}
+	}
+
+	function deletePerson1() {
+		var x1 = document.getElementById("person1");
+		var x2 = document.getElementById("button1");
+		var y1 = document.getElementById("person2");
+		if (x1.style.display === "flex" && y1.style.display === "flex") {
+	    	x1.style.display = "flex";
+		} else {
+			x1.style.display = "none";
+			x2.style.display = "flex";
+		}
+	}
+	// function my1() {
+	// 	$( "button" ).click(function() {
+	// 		$( "#myDIV" ).remove();
+	// 	});
+	// }
+	function deletePerson2() {
+		var x1 = document.getElementById("person1");
+		var y1 = document.getElementById("person2");
+		var y2_1 = document.getElementById("button2_1");
+		var y2_2 = document.getElementById("button2_2");
+		if (x1.style.display === "flex" && y1.style.display === "flex") {
+	    	y1.style.display = "none";
+			y2_1.style.display = "flex";
+			y2_2.style.display = "flex";
+	  }
+	}
+
+	function deletePerson3() {
+		var x1 = document.getElementById("person1");
+		var y1 = document.getElementById("person2");
+		var z1 = document.getElementById("person3");
+		var z2_1 = document.getElementById("button3_1");
+		var z2_2 = document.getElementById("button3_2");
+		if (x1.style.display === "flex" && y1.style.display === "flex" && z1.style.display === "flex") {
+	    	z1.style.display = "none";
+			z2_1.style.display = "flex";
+			z2_2.style.display = "flex";
+	  }
+	}
+
+	
+	
+
+	// w3school.com
+	// function myFunction() {
+  //   var x = document.getElementById("myDIV");
+  //   if (x.style.display === "none") {
+  //       x.style.display = "block";
+  //   } else {
+  //       x.style.display = "none";
+  //   }
+	// }
+</script>
